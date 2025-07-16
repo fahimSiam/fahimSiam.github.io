@@ -312,6 +312,14 @@
 .x9{left:386.208333pt;}
 .x8{left:456.750305pt;}
 }
+ @keyframes glow {
+  from {
+    box-shadow: 0 0 5px #007BFF, 0 0 10px #007BFF, 0 0 15px #007BFF;
+  }
+  to {
+    box-shadow: 0 0 20px #007BFF, 0 0 30px #007BFF, 0 0 40px #007BFF;
+  }
+}
 </style>
 <script>
 /*
@@ -359,6 +367,14 @@ pdf2htmlEX.defaultViewer = new pdf2htmlEX.Viewer({});
 <title></title>
 </head>
 <body>
+ <div style="text-align: center; margin: 20px;">
+    <a href="Md_Fahim_Siam_Professional_CV.pdf" download
+       style="padding: 12px 24px; font-size: 18px; color: white; background: #007BFF;
+              text-decoration: none; border-radius: 8px; box-shadow: 0 0 10px #007BFF;
+              animation: glow 1.5s infinite alternate;">
+      Download CV
+    </a>
+  </div>
 <div id="sidebar">
 <div id="outline">
 </div>
